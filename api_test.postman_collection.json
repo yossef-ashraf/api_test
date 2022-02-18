@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "9c7c9184-f164-48c1-b5f4-16cb290a193c",
+		"name": "api_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "all user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api_test/api/v1/user/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api_test",
+						"api",
+						"v1",
+						"user",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\":\"yossef\",\r\n\"email\":\"test1@test.com\",\r\n\"pass\":12548\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/api_test/api/v1/user/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api_test",
+						"api",
+						"v1",
+						"user",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\":2,\r\n\"users\":{\r\n\"name\":\"jo\"\r\n}}"
+				},
+				"url": {
+					"raw": "http://localhost/api_test/api/v1/user/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api_test",
+						"api",
+						"v1",
+						"user",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/api_test/api/v1/user/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api_test",
+						"api",
+						"v1",
+						"user",
+						"delete-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-all user",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\":6\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/api_test/api/v1/user/delete-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api_test",
+						"api",
+						"v1",
+						"user",
+						"delete-all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
